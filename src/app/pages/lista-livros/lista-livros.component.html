@@ -3,6 +3,7 @@
     <label for="campoBusca">Que livro você procura?</label>
     <div class="input-wrapper">
       <input
+        #campoBuscaElement
         type="search"
         id="campoBusca"
         [formControl]="campoBusca"        >
@@ -12,6 +13,7 @@
   <p>Busque por assunto, autoria, nome...</p>
   @if (mensagemErro) {
     <section
+      role="alert"
       class="resultados mensagem-erro">
         {{ mensagemErro }}
     </section>
